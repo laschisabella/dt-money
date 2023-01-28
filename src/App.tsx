@@ -1,7 +1,9 @@
-import { Dashboard } from './components/Dashborad'
+import { Dashboard } from './components/Dashboard'
 import { Header } from './components/Header'
 import { GlobalStyle } from './styles/global'
 import { createServer } from 'miragejs'
+import { useState } from 'react'
+import { NewTransactionModal } from './components/NewTransactionModal'
 
 createServer({
   routes() {
@@ -21,9 +23,25 @@ createServer({
 })
 
 export function App() {
+
+  const [isTransactionModalOpen, setIsTransactionModalOpen] = useState(false)
+
+  function handleOpenTransactionModal() {
+    setIsTransactionModalOpen(true)
+  }
+  function handleCloseTransactionModal() {
+    setIsTransactionModalOpen(false)
+  }
+
   return (
     <>
-      <Header />
+      <Header
+        OnOpenNewTransactionModal={handleOpenTransactionModal}
+      />
+      <NewTransactionModal
+        isOpen={isTransactionModalOpen}
+        onRequestClose={handleCloseTransactionModal}
+      />
       <Dashboard />
       <GlobalStyle />
     </>
