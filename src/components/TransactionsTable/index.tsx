@@ -9,8 +9,6 @@ export function TransactionsTable() {
       .then(response => console.log(response.data))
   }, [])
 
-
-
   return (
     <Container>
       <table>
@@ -26,12 +24,6 @@ export function TransactionsTable() {
         <tbody>
           <tr>
             <td>Desenvolvimento de website</td>
-            <td>$ 4.000</td>
-            <td>desenvolvimento</td>
-            <td>25/02/23</td>
-          </tr>
-          <tr>
-            <td>Desenvolvimento de website</td>
             <td className='deposit'>$ 4.000</td>
             <td>desenvolvimento</td>
             <td>25/02/23</td>
@@ -39,13 +31,7 @@ export function TransactionsTable() {
           <tr>
             <td>Aluguel</td>
             <td className='withdraw'>$ 1.000</td>
-            <td>desenvolvimento</td>
-            <td>25/02/23</td>
-          </tr>
-          <tr>
-            <td>Desenvolvimento de website</td>
-            <td>$ 4.000</td>
-            <td>desenvolvimento</td>
+            <td>despesas fixas</td>
             <td>25/02/23</td>
           </tr>
         </tbody>
