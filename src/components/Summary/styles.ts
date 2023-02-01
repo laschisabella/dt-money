@@ -5,7 +5,9 @@ export const Container = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 
-  margin-top: -10rem;
+  @media (max-width: 700px){
+    grid-template-columns: 1fr;
+  }
 
   div {
     background: #fff;
@@ -31,5 +33,7 @@ export const Container = styled.div`
       background: var(--green);
       color: #fff;
     }
+
+    
   }
 `

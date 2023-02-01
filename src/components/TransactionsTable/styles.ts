@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   
   margin-top: 4rem;
-  
+  overflow-x: auto;
   
   table{
     width: 100%;
@@ -15,10 +15,6 @@ export const Container = styled.div`
       padding: 0 1rem;
       text-align: left;
       line-height: 1.5rem;
-    }
-    
-    tr {
-      
     }
     
     td {
