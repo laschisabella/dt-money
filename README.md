@@ -15,7 +15,7 @@ This project is part of the React.js program of [Rocketseat](https://www.rockets
 
 ## Deployment
 
-You can access the published app <a href="https://dt-money-laschisabella.vercel.app/api/transactions">here</a>. 
+You can access the published app <a href="https://dt-money-laschisabella.vercel.app">here</a>. 
 
 ## Thanks
 
